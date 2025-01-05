@@ -1,0 +1,46 @@
+body {
+    background-color: #f1cbe3;
+}
+
+header {
+    background-color: #ffffffea;
+    color: rgb(5, 5, 5);
+    padding: 10px 0;
+}
+
+header .logo {
+    width: 50px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: rgb(6, 6, 6);
+    text-decoration: none;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+}

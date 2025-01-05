@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil - Aplikasi Simpan Pinjam</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="MC2.jpeg" alt="Logo Aplikasi" class="logo">
+        <nav>
+            <ul>
+                <li><a href="beranda.html">Beranda</a></li>
+                <li><a href="transaksi.html">Transaksi</a></li>
+                <li><a href="profile.html">Profil</a></li>
+                <li><a href="index.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container mt-5">
+        <h2>Profil Pengguna</h2>
+        <div class="card">
+            <div class="card-body text-center">
+                <!-- Foto Diri -->
+                <img src="profile.jpeg" alt="Foto Diri" class="rounded-circle" width="150" height="150">
+                <h5 class="card-title mt-3">Nama Pengguna: <span id="usernameDisplay">Edis Adelia</span></h5>
+                <p class="card-text"><strong>Email:</strong> <span id="emailDisplay">edisadelia.15@gmail.com</span></p>
+                
+                <h5 class="mt-4">Ubah Password</h5>
+                <form id="changePasswordForm">
+                    <div class="form-group">
+                        <label for="currentPassword">Password Saat Ini</label>
+                        <input type="password" class="form-control" id="currentPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="newPassword">Password Baru</label>
+                        <input type="password" class="form-control" id="newPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmPassword">Konfirmasi Password Baru</label>
+                        <input type="password" class="form-control" id="confirmPassword" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ubah Password</button>
+                </form>
+
+                <h5 class="mt-4">Ubah Username</h5>
+                <form id="changeUsernameForm">
+                    <div class="form-group">
+                        <label for="newUsername">Username Baru</label>
+                        <input type="text" class="form-control" id="newUsername" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Ubah Username</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Aplikasi Simpan Pinjam</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container text-center">
+            <img src="MC2.jpeg" alt="Logo Aplikasi" class="logo">
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="beranda.html">Beranda</a></li>
+                    <li class="list-inline-item"><a href="transaksi.html">Transaksi</a></li>
+                    <li class="list-inline-item"><a href="profile.html">Profil</a></li>
+                    <li class="list-inline-item"><a href="index.html">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h2>Form Transaksi</h2>
+        <p>Silakan isi formulir di bawah ini untuk mencatat transaksi Anda.</p>
+        <form id="transaksiForm">
+            <div class="form-group">
+                <label for="namaTransaksi">Nama Transaksi</label>
+                <select class="form-control" id="namaTransaksi" required>
+                    <option value="">-- Pilih Transaksi --</option>
+                    <option value="Pinjam">Pinjam</option>
+                    <option value="Tabung">Tabung</option>
+                    <option value="Credit">Credit</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="jumlah">Jumlah</label>
+                <input type="number" class="form-control" id="jumlah" required>
+            </div>
+            <div class="form-group">
+                <label for="kategori">Kategori</label>
+                <input type="text" class="form-control" id="kategori" placeholder="Contoh: Pendidikan" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Simpan</button>
+        </form>
+        <a href="daftar_transaksi.html" class="btn btn-link">Daftar Transaksi</a>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2023 Aplikasi Simpan Pinjam - My_Choice by Edis Adelia</p>
+        <p><a href="privacy.html">Kebijakan Privasi</a> | <a href="contact.html">Kontak</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

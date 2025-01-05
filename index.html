@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aplikasi Simpan Pinjam</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-color: #f9defb;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #fcfbfc;
+            color: rgb(6, 6, 6);
+            padding: 20px 0;
+            text-align: center;
+        }
+        header .logo {
+            width: 120px;
+            height: auto;
+        }
+        .container {
+            max-width: 400px;
+            margin-top: 50px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            background-color: #343a40; /* Warna abu gelap */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white; /* Tautan footer berwarna putih */
+        }
+        footer a:hover {
+            text-decoration: underline;
+            color: #f9defb; /* Warna saat hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="MC2.jpeg" alt="Logo Aplikasi" class="logo">
+    </header>
+
+    <div class="container">
+        <h2 class="text-center">Login</h2>
+        <p class="text-center">Silakan masukkan username dan password Anda untuk masuk.</p>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
+        </form>
+        <p class="text-center mt-3">Belum punya akun? <a href="daftar.html">Daftar/buat akun</a></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Aplikasi Simpan Pinjam - My_Choice by Edis Adelia</p>
+        <p><a href="privacy.html">Kebijakan Privasi</a> | <a href="contact.html">Kontak</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

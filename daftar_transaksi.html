@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Transaksi - Aplikasi Simpan Pinjam</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            transition: background-color 0.5s; /* Animasi transisi warna latar belakang */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container text-center">
+            <img src="MC2.jpeg" alt="Logo Aplikasi" class="logo">
+            <nav>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="beranda.html">Beranda</a></li>
+                    <li class="list-inline-item"><a href="transaksi.html">Transaksi</a></li>
+                    <li class="list-inline-item"><a href="profile.html">Profil</a></li>
+                    <li class="list-inline-item"><a href="index.html">Login</a></li>
+                    <li class="list-inline-item"><a href="privacy.html">Kebijakan Privasi</a></li>
+                    <li class="list-inline-item"><a href="contact.html">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <h2>Daftar Transaksi</h2>
+        <p>Berikut adalah daftar transaksi yang telah Anda lakukan. Anda dapat melihat detail setiap transaksi di bawah ini.</p>
+        
+        <!-- Opsi untuk mengubah warna latar belakang -->
+        <div class="form-group">
+            <label for="bgColor">Pilih Warna Latar Belakang:</label>
+            <select id="bgColor" class="form-control" onchange="changeBackgroundColor()">
+                <option value="">-- Pilih Warna --</option>
+                <option value="#ffffff">Putih</option>
+                <option value="#f8f9fa">Abu-abu Muda</option>
+                <option value="#007bff">Biru</option>
+                <option value="#28a745">Hijau</option>
+                <option value="#dc3545">Merah</option>
+                <option value="#ffc107">Kuning</option>
+            </select>
+        </div>
+
+        <table class="table table-bordered table-responsive">
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Transaksi</th>
+                    <th>Jumlah</th>
+                    <th>Kategori</th>
+                    <th>Tanggal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Contoh data transaksi -->
+                <tr>
+                    <td>1</td>
+                    <td>Pinjaman Tunai</td>
+                    <td>10,000,000</td>
+                    <td>Pendidikan</td>
+                    <td>2023-10-01</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Setoran Uang</td>
+                    <td>500,000</td>
+                    <td>Tabungan</td>
+                    <td>2023-10-05</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Credit</td>
+                    <td>200,000</td>
+                    <td>Peralatan Kantor</td>
+                    <td>2023-10-10</td>
+                </tr>
+                <!-- Tambahkan lebih banyak data transaksi sesuai kebutuhan -->
+            </tbody>
+        </table>
+        <a href="transaksi.html" class="btn btn-link">Kembali ke Form Transaksi</a>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2023 Aplikasi Simpan Pinjam - My_Choice by Edis Adelia</p>
+    </footer>
+
+    <script>
+        function changeBackgroundColor() {
+            const selectedColor = document.getElementById('bgColor').value;
+            document.body.style.backgroundColor = selectedColor;
+        }
+    </script>
+</body>
+</html>
